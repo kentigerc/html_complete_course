@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>click Alert</title>
+</head>
+<body>
+   <div class="message">Click anywhere on the screen</div>
+
+    <script type="text/javascript">
+        document.addEventListener('click', function(event) {
+            if (event.button === 0) {
+                alert('Left Click Detected');
+                document.querySelector('.message').textContent = 'You performed a Left Click';
+            }
+        });
+
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault(); 
+            alert('Right Click Detected');
+            document.querySelector('.message').textContent = 'You performed a Right Click';
+        });
+    </script>
+</body>
+</html>
+    

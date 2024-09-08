@@ -1,0 +1,1028 @@
+<!-- #a code that count the sum of two numbers -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A program to add two numbers</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var num1, num2, sum;
+    num1 = prompt("Enter the first number");
+    num2 = prompt("Enter the second number");
+    sum = parseInt(num1) + parseInt(num2);
+    alert("sum = " + sum);
+  </script>
+</body>
+</html> -->
+
+
+
+
+
+ <!-- # a code that ask you to input your name -->
+
+<!-- <!Doctype html>
+<html>
+   <head>
+      <title>Example: javascript input</title>
+      
+      <script>
+         function fun() {
+            var name = t1.value;
+            document.getElementById("msg").innerHTML = "Hello "+name;
+         }
+      </script>
+   </head>
+   <body>
+      Enter Name <input type="text" id="t1" /> <br /><br />
+      <input type="button" value="Click Me!" onclick="fun()"/> <br/>
+      <p id="msg"> </p>
+   </body>
+</html>  -->
+
+
+
+
+<!-- #a code to alert when you right/left click -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Click Detector</title>
+ </head>
+ <body>
+     <div id="clickDisplay">Click anywhere!</div>
+
+     <script>
+         var clickDisplay = document.getElementById('clickDisplay');
+
+         document.addEventListener('click', function(event) {
+             if (event.button === 0) {
+                 alert('Left click detected');
+                 clickDisplay.innerText = 'Left click detected';
+             }
+         });
+
+         document.addEventListener('contextmenu', function(event) {
+             event.preventDefault();
+             alert('Right click detected');
+             clickDisplay.innerText = 'Right click detected';
+         });
+     </script>
+ </body>
+</html> -->
+
+
+
+
+
+<!-- #a code that display right click or left click is not allowed -->
+ 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .message {
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">Click anywhere on the screen</div>
+
+    <script>
+        document.addEventListener('click', function(event) {
+            // Left click is detected by button === 0
+            if (event.button === 0) {
+                alert('Left Click Detected');
+                document.querySelector('.message').textContent = 'Left click is not allowed';
+            } else if (event.button === 2) { // Right click is detected by button === 2
+                alert('Right Click Detected');
+                document.querySelector('.message').textContent = 'Right click is not allowed';
+            }
+        });
+
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault(); // Prevent the context menu from appearing
+            alert('Right Click Detected');
+            document.querySelector('.message').textContent = 'Right click is not allowed';
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- #alert when you right click or left click -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>click Alert</title>
+</head>
+<body>
+   <div class="message">Click anywhere on the screen</div>
+
+    <script type="text/javascript">
+        document.addEventListener('click', function(event) {
+            if (event.button === 0) {
+                alert('Left Click Detected');
+                document.querySelector('.message').textContent = 'You performed a Left Click';
+            }
+        });
+
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault(); 
+            alert('Right Click Detected');
+            document.querySelector('.message').textContent = 'You performed a Right Click';
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- #A PROGRAM TO ADD TWO NUMBERS -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function sum(){
+            var a = parseInt(t1.value);
+            var b =parseInt(t2.value);
+            var c = a+b;
+            document.getElementById("results").innerHTML = "sum" + c;
+        }
+    </script>
+    
+</head>
+<body>
+    Enter First Name <input type="text" id="t1"><br><br>
+    Enter second Name <input type="text" id="t2"><br><br>
+    <input type="button" value="sum" onclick="sum()"><br><br>
+    <p id="results"></p>
+
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- #JAVASCRIPT CODE FOR OPERATORS -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Operators</title>
+    <script type="text/javascript">
+        function fun1(){
+            var a = parseInt(t1.value);
+            var b = parseInt(t2.value);
+            var c = a + b;
+            document.getElementById("output").innerHTML = "sum=" + c;             
+        }
+        function fun2(){
+            var a = parseInt(t1.value);
+            var b = parseInt(t2.value);
+            var c = a - b;
+            document.getElementById("output").innerHTML = "sub=" + c;
+        }
+        function fun3(){
+            var a = parseInt(t1.value);
+            var b = parseInt(t2.value);
+            var c = a * b;
+            document.getElementById("output").innerHTML = "mul=" + c;
+        }
+        function fun4(){
+            var a = parseInt(t1.value);
+            var b = parseInt(t2.value);
+            var c = a / c;
+            document.getElementById("output").innerHTML = "Div=" + c;
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Enter first number:</td>
+            <td><input type="text" id="t1" /> </td>
+        </tr>
+        <tr>
+            <td>Enter Second number:</td>
+            <td><input type="text" id="t2"/> </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" > 
+                <input type="button" value="sum" onclick="fun1()"/>
+                <input type="button" value="sub" onclick="fun2()"/>
+                <input type="button" value="Mul" onclick="fun3()"/>
+                <input type="button" value="Div" onclick="fun4()"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" >
+            <p id="output">output</p>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html> -->
+
+
+
+
+
+<!-- #INPUT TWO NUMBERS AND USE ALL OPERATORS ON A DROP-DOWN.(select) -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function fun(){
+            var a = parseInt(document.getElementById('t1').value);
+            var b = parseInt(document.getElementById('t2').value);
+            var op = document.getElementById('s1').value;
+            var c;
+            
+            if(op == "sum") {
+                c = a + b;
+            } else if(op == "sub") {
+                c = a - b;
+            } else if(op == "mul") {
+                c = a * b;
+            } else if(op == "Div") {
+                c = a / b;
+            }
+            
+            document.getElementById("output").innerHTML = "Result = " + c;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Enter 1st Number</td>
+                <td><input type="text" id="t1" ></td>
+            </tr>
+            <tr>
+                <td>Enter 2nd Number</td>
+                <td><input type="text" id="t2" ></td>
+            </tr>
+            <tr>
+                <td>
+                    <select onchange="fun()" id="s1">
+                        <option>Select</option>
+                        <option value="sum">sum</option>
+                        <option value="sub">sub</option>
+                        <option value="mul">mul</option>
+                        <option value="Div">Div</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <p id="output">output</p>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- #INPUT TWO NUMBERS AND PERFORM ARITMETIC ACTION USING SELECT OPTION.(ON OPERATORS) -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Calculator</title>
+</head>
+<body>
+    <h2>Arithmetic Calculator</h2>
+    <input type="text" id="num1"> 
+    <select id="operation">
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="mul">*</option>
+        <option value="div">/</option>
+    </select>
+    <input type="text" id="num2"> 
+    = 
+    <input type="text" id="result" readonly> 
+    <br>
+    <input type="button" value="Answer" onclick="calculate()">
+
+    <script>
+        function calculate() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var operation = document.getElementById('operation').value;
+            var result;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                result = 'Invalid input';
+            } else {
+                if (operation === 'add') {
+                    result = num1 + num2;
+                } else if (operation === 'sub') {
+                    result = num1 - num2;
+                } else if (operation === 'mul') {
+                    result = num1 * num2;
+                } else if (operation === 'div') {
+                    if (num2 === 0) {
+                        result = 'Cannot divide by zero';
+                    } else {
+                        result = num1 / num2;
+                    }
+                } else {
+                    result = 'Invalid operation';
+                }
+            }
+
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+ <!-- #ALL OPERATORS USING RADIO BUTTONS
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic Operations</title>
+    <script>
+        function calculate() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var operation = document.querySelector('input[name="operation"]:checked').value;
+            var result;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                result = "Please enter valid numbers.";
+            } else {
+                if (operation === "sum") {
+                    result = num1 + num2;
+                } else if (operation === "sub") {
+                    result = num1 - num2;
+                } else if (operation === "mul") {
+                    result = num1 * num2;
+                } else if (operation === "div") {
+                    result = num2 !== 0 ? num1 / num2 : "Cannot divide by zero";
+                } else {
+                    result = "Please select an operation.";
+                }
+            }
+            document.getElementById("output").innerText = "Output: " + result;
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var radios = document.querySelectorAll('input[name="operation"]');
+            radios.forEach(function(radio) {
+                radio.addEventListener('change', calculate);
+            });
+        });
+    </script>
+</head>
+<body>
+    
+    <label for="num1">Enter 1st Number:</label>
+    <input type="text" id="num1" oninput="calculate()"><br><br>
+    <label for="num2">Enter 2nd Number:</label>
+    <input type="text" id="num2" oninput="calculate()"><br><br>
+    <input type="radio" id="sum" name="operation" value="sum">
+    <label for="sum">Sum</label>
+    <input type="radio" id="sub" name="operation" value="sub">
+    <label for="sub">Sub</label>
+    <input type="radio" id="mul" name="operation" value="mul">
+    <label for="mul">Mul</label>
+    <input type="radio" id="div" name="operation" value="div">
+    <label for="div">Div</label><br><br>
+    <div id="output">Output: </div>
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- #A PROGRAM TO CHECK IF AGE IS GREATER THAN 18 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    Enter age <input type="text" id="age"><br>
+    <input type="button" value="check" onclick="checkAge()">
+    <p id="result" ></p>
+    </div>
+    <script type="text/javascript">
+        function checkAge(){
+            var age = document.getElementById('age').value;
+            var result = document.getElementById('result');
+            if (age>=18){
+                result.textContent = 'age is above 18';                
+            }else{
+                result.textContent = 'age is below 18';
+            }
+        }
+        
+
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- #A CODE TO CALCULATE DISCOUNT -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Discount</title>
+    <style>
+        .container {
+            border: 1px solid;
+            max-width: 300px;         
+        }
+        
+    </style>
+</head>
+<body>
+    <b><p>calculate Discount</p></b>
+    <div class="container">
+        
+        <label for="amount">Enter Shopping Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        <button onclick="calculateDiscount()">Calculate Discount</button>
+        <p id="total">Total amount</p>
+    </div>
+
+    <script>
+        function calculateDiscount() {
+            var amount = document.getElementById('amount').value;
+            var total = document.getElementById('total');
+            var discount = 0;
+
+            if (amount > 1000) {
+                discount = 0.15;
+            } else {
+                discount = 0.05;
+            }
+
+            var discountedAmount = amount - (amount * discount);
+            total.textContent = 'Total Amount after Discount: $' + discountedAmount.toFixed(2);
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- #A CODE TO SELECT COUNTRY AND IT'S CAPITAL USING DROPDOWN-->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Country and Capital</title>
+   
+</head>
+<body>
+    
+    <fieldset>
+        <b><p>Select Country to find its Capital</p></b>
+<div>
+    <label for="countries">Select Country:</label>
+    <select id="countries" onchange="showCapital()">
+        <option value="">Select Country</option>
+        <option value="Afghanistan" data-capital="Kabul">Afghanistan</option>
+        <option value="Albania" data-capital="Tirana">Albania</option>
+        <option value="Algeria" data-capital="Algiers">Algeria</option>
+        <option value="Andorra" data-capital="Andorra la Vella">Andorra</option>
+        <option value="Angola" data-capital="Luanda">Angola</option>
+        
+    </select>
+
+    <label for="capitals">Capital:</label>
+    <select id="capitals" readonly>
+        <option value="">Select Capital</option>
+        <option value="Kabul">Kabul</option>
+        <option value="Tirana">Tirana</option>
+        <option value="Algiers">Algiers</option>
+        <option value="Andorra la Vella">Andorra la Vella</option>
+        <option value="Luanda">Luanda</option>
+        
+    </select>
+</div>
+
+<script>
+    function showCapital() {
+        var countries = document.getElementById("countries");
+        var capitals = document.getElementById("capitals");
+        var selectedOption = countries.options[countries.selectedIndex];
+        
+        capitals.value = selectedOption.getAttribute('data-capital') || "";
+    }
+</script>
+    </fieldset>
+
+</body>
+</html> -->
+
+
+
+
+<!-- #CREATING A LOGIN FORM THAT WILL ACCEPT USERNAME AND PASSWORD -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+<div>
+    <h2>Login Form</h2>
+    <form id="loginForm">
+        <label for="username">Enter Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <button type="submit">Login</button>
+        <div id="error" style="color:blue;"></div>
+    </form>
+</div>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const username = document.getElementById('username').value.trim().toLowerCase();
+        const password = document.getElementById('password').value.trim();
+        const errorElement = document.getElementById('error');
+
+        if ((username === 'admin') && password === 'admin123') {
+            alert('Login successful!');
+            errorElement.textContent = '';
+        } else {
+            errorElement.textContent = 'Wrong username or password';
+        }
+    });
+</script>
+
+</body>
+</html> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+</head>
+<body>
+    <script>
+        function loginf(){
+        var Username = document.getElementById("t1").value;
+        var password = document.getElementById("t2").value;
+        var submit;
+        console.log("Username:", username);
+        console.log("password:", password);
+        if ((username === 'admin') && password === 'admin123') {
+            alert('Login successful!');
+            errorElement.textContent = '';
+        } else {
+            errorElement.textContent = 'Wrong username or password';
+        }
+
+            
+        }
+        
+    </script>
+    <h1>login form</h1>
+    Enter Username: <input type="text" id="t1"><br>
+    Enter Password: <input type="password" id="t2"><br>
+    <input type="button" value="Login" onclick="loginf()">
+</body>
+</html>
+
+
+
+<!-- #A CODE TO DETERMINE WHICH NUMBER IS LARGER
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Largest Number</title>
+</head>
+<body>
+    <h1>Check largest number</h1>
+    <form onsubmit="return findLargerNumber()">
+        <label for="number1">Enter number 1:</label>
+        <input type="number" id="number1" required><br><br>
+        <label for="number2">Enter number 2:</label>
+        <input type="number" id="number2" required><br><br>
+        <input type="submit" value="submit">
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function findLargerNumber() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+            var resultText;
+
+            if (num1 > num2) {
+                resultText = num1 + " is Larger";
+            } else if (num2 > num1) {
+                resultText = num2 + " is Larger";
+            } else {
+                resultText = "Both numbers are equal";
+            }
+
+            document.getElementById('result').innerText = resultText;
+            return false; // Prevent form submission
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- #JAVASCRIPT RELATIONAL OPERATORS
+<html>
+<body>
+<script type="text/javascript">
+
+var a = 10;
+var b = 20;
+var linebreak = "<br />";
+document.write("(a == b) => ");
+result = (a == b);
+document.write(result);
+document.write(linebreak);
+document.write("(a < b) => ");
+result = (a < b);
+document.write(result);
+document.write(linebreak);
+document.write("(a > b) => ");
+result = (a > b);
+document.write(result);
+document.write(linebreak)
+document.write("(a != b) => ");
+result = (a != b);
+document.write(result);
+document.write(linebreak);
+document.write("(a >= b) => ");
+result = (a >= b);
+document.write(result);
+document.write(linebreak);
+document.write("(a <= b) => ");
+result = (a <= b);
+document.write(result);
+document.write(linebreak);
+//
+</script>
+<p>Set the variables to different values and different operators and then
+try...</p>
+</body>
+</html> -->
+
+
+
+<!-- #JAVASCRIPT ARITHMETIC OPERATORS
+<html>
+<body>
+<script type="text/javascript">
+var a = 33;
+var b = 10;
+var c = "Test";
+var linebreak = "<br />";
+document.write("a + b = ");
+result = a + b;
+document.write(result);
+document.write(linebreak);
+document.write("a - b = ");
+result = a - b;
+document.write(result);
+document.write(linebreak);
+document.write("a / b = ");
+result = a / b;
+document.write(result);
+document.write(linebreak);
+document.write("a % b = ");
+result = a % b;
+document.write(result);
+document.write(linebreak);
+document.write("a + b + c = ");
+result = a + b + c;
+document.write(result);
+document.write(linebreak)
+a = a++;
+document.write("a++ = ");
+result = a++;
+document.write(result);
+document.write(linebreak);
+b = b--;
+document.write("b-- = ");
+result = b--;
+document.write(result);
+document.write(linebreak);
+//
+</script>
+<p>Set the variables to different values and then try...</p>
+</body>
+</html> -->
+
+
+<!-- #JAVASCRIPT ASSIGNMENT OPERATORS
+<html>
+<body>
+<script type="text/javascript">
+
+var a = 10;
+var b = 20;
+var linebreak = "<br />";
+document.write("(a == b) => ");
+result = (a == b);
+document.write(result);
+document.write(linebreak);
+document.write("(a < b) => ");
+result = (a < b);
+document.write(result);
+document.write(linebreak);
+document.write("(a > b) => ");
+result = (a > b);
+document.write(result);
+document.write(linebreak)
+document.write("(a != b) => ");
+result = (a != b);
+document.write(result);
+document.write(linebreak);
+document.write("(a >= b) => ");
+result = (a >= b);
+document.write(result);
+document.write(linebreak);
+document.write("(a <= b) => ");
+result = (a <= b);
+document.write(result);
+document.write(linebreak);
+//
+</script>
+<p>Set the variables to different values and different operators and then
+try...</p>
+</body>
+</html> -->
+
+
+
+
+<!-- #INCREMENT BY MULTIPLICATION CODE -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment By Multiplication</title>
+    <script>
+        <h1>Enter Number</h1>
+        function fun(){
+            document.getElementById("p1").innerHTML= " ";
+            var a = parseInt(t1.value);
+            for(i = 1; i <=10; i++){
+                document.getElementById("p1"). innerHTML += a + "x" + i +"=" + a * i +  "<br>";
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter Number <input type="text" id="t1" size="2" style="padding-left:5px;"/>
+    <input type="button" onclick="fun()" value="Go"/>
+    <p id="p1"></p>
+</body>
+</html> -->
+
+
+
+
+<!-- #A CODE TO SELECT AGE USING A DROP DOWN SELECT -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            for (i = 20; i<=60; i++){
+                document.getElementById("age").innerHTML  += "<option>" +  i + "</option>";
+            }
+
+        }
+    </script>
+</head>
+<body onload="fun()">
+    Select Age
+    <select id="age">
+        <option>select</option>
+    </select>
+    
+</body>
+</html> -->
+
+
+
+<!-- #CODE THAT CHANGES LOWERCASE LETTERS TO UPPPERCASE LETTERS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upper case</title>
+    <script>
+        function funCapital(){
+            t1.value = t1.value.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+   <p> The function transforms the character to upper case as you tyoe.</p>
+   Enter Name: <input type="text" id="t1" onKeyup="funCapital()">
+</body>
+</html> -->
+
+
+<!-- 
+#A CODE THAT CHANGES UPPPERCASE LETTERS TO LOWERCASE LETTERS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lower case</title>
+    <script>
+        function funCapital(){
+            t1.value = t1.value.toLowerCase();
+        }
+    </script>
+</head>
+<body>
+   <p> The function transforms the character to upper case as you tyoe.</p>
+   Enter Name: <input type="text" id="t1" onkeydown="funCapital()">
+</body>
+</html> -->
+
+
+
+
+
+<!-- #ON MOUSE OVER EVENT- HOVERING THE MOUSE ON A WORD AND SEE THE UNDERLYING WORD -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Display Content</title>
+</head>
+<body>
+
+    <p>Hover over the <span id="hover-word">word</span> to see the hidden content.</p>
+    <div id="hidden-content" style="display:none;">This is the hidden content that appears when you hover over the word.</div>
+
+    <script>
+        document.getElementById('hover-word').onmouseenter = function() {
+            document.getElementById('hidden-content').style.display = 'block';
+        };
+
+        document.getElementById('hover-word').onmouseleave = function() {
+            document.getElementById('hidden-content').style.display = 'none';
+        };
+    </scrip>
+
+</body>
+</html> -->
+
+
+<!-- #A BUTTON THAT DISPLAYS DATE AND TIME WHEN CLICKED
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Display date and Time</h1>
+    <script>
+        function displayDateTime(){
+            const now = new Date();
+            const datetimestring= now.toLocaleString();
+            document.getElementById("datetime").innerHTML=datetimestring;
+        }
+    </script>
+    <button onclick="displayDateTime()">click to display date and time</button>
+    <div id="datetime"></div>
+</body>
+</html> -->
+
+
+
+
+ <!-- #CASE STATEMENT TO COUNT DAYS OF THE WEEK
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Basic Switch Statement</title>
+ <script>
+ function getDayName() {
+   let dayNumber = document.getElementById("dayNumber").value;
+   let dayName;
+   switch (parseInt(dayNumber)) {
+     case 1:
+       dayName = "Sunday";
+       break;
+     case 2:
+       dayName = "Monday";
+       break;
+     case 3:
+       dayName = "Tuesday";
+       break;
+     case 4:
+       dayName = "Wednesday";
+       break;
+     case 5:
+       dayName = "Thursday";
+       break;
+     case 6:
+       dayName = "Friday";
+       break;
+     case 7:
+       dayName = "Saturday";
+       break;
+     default:
+       dayName = "Unknown";
+   }
+   document.getElementById("result").innerHTML = "Today is " + dayName + ".";
+ }
+ </script>
+</head>
+<body>
+ <h1>Enter Day Number</h1>
+ <p>Enter a number (1-7) to find the corresponding day of the week:</p>
+ <input type="text" id="dayNumber" />
+ <button onclick="getDayName()">Get Day Name</button>
+ <p id="result"></p>
+</body>
+</html> -->
+
+           
+
+
+
+
+
+

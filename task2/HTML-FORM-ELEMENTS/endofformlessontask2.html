@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>end of form lesson task 2</title>
+</head>
+<style>
+  form{
+    max-width: 350px;
+    border: 1px solid;
+  }
+</style>
+<body>
+  <form>
+    <label for="Username">Username:</label>
+    <input type="text"><br>
+    <label for="Password">Password:</label>
+    <input type="password"><br>
+    <label for="City of Employment">City of Employment:</label>
+    <input type="text"><br>
+    <label for="Web server">Web server:</label>
+    <select id="webserver" name="webserver">
+    <option>-Choose a server-</option>
+    <optgroup label="-choose a sever-">
+      
+    </optgroup>
+    </select><br>
+    <label for="please specify your role">Please specify your role:</label><br>
+    
+    <input type="radio" name="role" value="Admin">
+    <label for="Admin">Admin</label><br>
+    <input type="radio" name="role" value="Engineer">
+    <label for="Engineer">Engineer</label><br>
+    <input type="radio" name="role" value="Mananager">
+    <label for="Mananager">Mananager</label><br>
+    <label for="single sign-on for the following:">Single sign-on following</label><br>
+    <input type="checkbox" id="mail" name="sso" value="mail">
+    <label for="Mail">Mail</label><br>
+    <input type="checkbox" id="Payroll" name="sso" value="Payroll">
+    <label for="Payroll">Payroll</label><br>
+    <input type="checkbox" id="Self-service" name="sso" value="Self-service">
+    <label for="Self-service">Self-service</label><br><br>
+    <input type="submit" value="login">
+    <input type="reset" value="Reset">
+
+    
+  </form>
+  
+</body>
+</html>

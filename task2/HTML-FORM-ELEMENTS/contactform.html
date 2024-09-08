@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact form</title>
+</head>
+<style>
+  form{
+    border: 1px solid;
+    max-width: 400px;
+    background-color: blue;
+  }
+</style>
+<body>
+  <form>
+  <h1>contact form</h1>
+  <p>please fill in your intormation and we'll be sending your order in no time</p>
+  <label for="your Name" id="Your Name">Your Name</label>
+  <input type="text" placeholder="First Name">
+  <input type="text" placeholder="Last Name"><br>
+  <label for="Your Email" id="your Email" >Your Email</label>
+  <input type="text" placeholder="e.g. hello@contaCT.net"><br>
+  <label for="phone*">phone</label>
+  <input type="number" placeholder="###">
+  <input type="text" placeholder="###">
+  <input type="text" placeholder="####"><br>
+  <label for="message subject*">message subject</label>
+  <select>
+    <option>other</option>
+    <optgroup label="-other-">
+      
+    </optgroup>
+    </select><br>
+  <label for="message" id="message">message</label>
+  <input type="textbox"><br>
+  <div class="g-recaptcha" data-sitekey="captcha"></div>
+  <text style="color:white">Verfication*</text>
+  <input type="checkbox" id="notr" name="notr" value="i'm not a robot">
+      <label for="notr">I'm not a robot.</label><br>
+ 
+    <hr>
+  </form>
+</body>
+</html>
